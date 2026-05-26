@@ -1,0 +1,75 @@
+openapi: 3.1.0
+info:
+  title: Aocam Camera Node API
+  version: 0.0.1-delivery0
+paths:
+  /api/status:
+    get:
+      summary: Get camera node runtime and health status.
+      responses:
+        "200":
+          description: Camera status.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CameraStatus"
+  /api/events:
+    get:
+      summary: List local motion events.
+      responses:
+        "200":
+          description: Motion event list.
+  /api/clips:
+    get:
+      summary: List local video clips.
+      responses:
+        "200":
+          description: Clip list.
+  /api/snapshot:
+    get:
+      summary: Return the latest camera snapshot.
+      responses:
+        "200":
+          description: JPEG snapshot.
+  /api/live:
+    get:
+      summary: Return snapshot refresh or MJPEG live stream.
+      responses:
+        "200":
+          description: Live stream response.
+components:
+  schemas:
+    CameraStatus:
+      type: object
+      required:
+        - cameraState
+        - serviceState
+        - recordingState
+        - motionState
+      properties:
+        cameraState:
+          type: string
+          examples: ["inactive"]
+        serviceState:
+          type: string
+          examples: ["stopped"]
+        recordingState:
+          type: string
+          examples: ["idle"]
+        motionState:
+          type: string
+          examples: ["idle"]
+        uptimeSeconds:
+          type: integer
+          minimum: 0
+        batteryPercent:
+          type: integer
+          minimum: 0
+          maximum: 100
+        storageUsedPercent:
+          type: number
+          minimum: 0
+          maximum: 100
+        lanIp:
+          type: string
+          examples: ["192.168.1.42"]

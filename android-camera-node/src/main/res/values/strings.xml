@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aocam</string>
+    <string name="delivery_one_status">Delivery 1 camera baseline</string>
+    <string name="camera_service_channel_name">Aocam camera service</string>
+    <string name="camera_service_notification_title">Aocam camera service</string>
+    <string name="camera_service_notification_text">Camera node baseline is running</string>
+</resources>

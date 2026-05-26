@@ -1,0 +1,46 @@
+openapi: 3.1.0
+info:
+  title: Aocam Local Server API
+  version: 0.0.1-delivery0
+paths:
+  /health:
+    get:
+      summary: Check local server health.
+      responses:
+        "200":
+          description: Server health.
+  /api/cameras:
+    get:
+      summary: List registered camera nodes.
+      responses:
+        "200":
+          description: Camera registry list.
+    post:
+      summary: Register a camera node.
+      responses:
+        "201":
+          description: Camera registered.
+  /api/events:
+    get:
+      summary: List aggregated motion events.
+      responses:
+        "200":
+          description: Unified event timeline.
+  /api/clips:
+    get:
+      summary: List known clips across cameras.
+      responses:
+        "200":
+          description: Unified clip list.
+  /api/alerts:
+    get:
+      summary: List active system alerts.
+      responses:
+        "200":
+          description: Alert list.
+  /api/dashboard/summary:
+    get:
+      summary: Return dashboard summary state.
+      responses:
+        "200":
+          description: Summary for security-room dashboard.

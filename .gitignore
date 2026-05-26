@@ -1,0 +1,26 @@
+.DS_Store
+
+# Android / Gradle
+.gradle/
+build/
+**/build/
+local.properties
+*.apk
+*.aab
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# IDE
+.idea/
+.vscode/
+
+# Runtime data
+data/
+logs/
+*.sqlite
+*.db

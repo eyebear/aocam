@@ -1,0 +1,29 @@
+html {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f6f7f9;
+  color: #151a22;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 16px;
+  line-height: 1.5;
+}
