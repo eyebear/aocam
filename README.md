@@ -117,3 +117,7 @@ http://127.0.0.1:8765/api/dashboard/summary
 The Android skeleton is in `android-camera-node/`. It is meant to be opened in Android Studio or built with Gradle after Android SDK tooling is installed.
 
 The app now has the Delivery 1 baseline: permission flow, CameraX preview, foreground camera service, status view, and local logging.
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
